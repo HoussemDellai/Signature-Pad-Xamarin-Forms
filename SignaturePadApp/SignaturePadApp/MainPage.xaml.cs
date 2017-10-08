@@ -15,6 +15,7 @@ namespace SignaturePadApp
         private async void SaveButton_Clicked(object sender, EventArgs e)
         {
             Stream image = await PadView.GetImageStreamAsync(SignatureImageFormat.Jpeg);
+            // you can add code here to save the Stream image.
         }
 
         private void ClearButton_Clicked(object sender, EventArgs e)
