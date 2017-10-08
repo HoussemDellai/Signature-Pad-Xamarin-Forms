@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SignaturePadApp"
+             xmlns:forms="clr-namespace:SignaturePad.Forms;assembly=SignaturePad.Forms"
+             x:Class="SignaturePadApp.MainPage"
+             Padding="10">
+
+    <StackLayout>
+
+        <Label Text="Xamarin Forms" FontSize="48" TextColor="DodgerBlue"/>
+        
+        <Label Text="Signature Pad" FontSize="52" TextColor="DeepPink"/>
+        
+        <forms:SignaturePadView x:Name="PadView"
+                                HeightRequest="350"
+                                WidthRequest="240"
+                                BackgroundColor="White"
+                                StrokeColor="Black"
+                                StrokeWidth="2" />
+        
+        <Button Text="Save" FontSize="30" BackgroundColor="DodgerBlue" TextColor="White"
+                Clicked="SaveButton_Clicked"/>
+        
+        <Button Text="Clear" FontSize="30" BackgroundColor="DeepPink" TextColor="White"
+                Clicked="ClearButton_Clicked"/>
+        
+    </StackLayout>
+</ContentPage>
